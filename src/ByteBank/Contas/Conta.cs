@@ -35,7 +35,7 @@ namespace ByteBank.Contas
             {
                 return _saldo;
             }
-            set
+            private set
             {
                 if (value < 0)
                 {

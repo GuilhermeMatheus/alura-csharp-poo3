@@ -47,9 +47,9 @@ namespace ByteBank
             GerenciadorBonificacao gerenciadorBonificacao = new GerenciadorBonificacao();
             List<Funcionario> funcionarios = ObterFuncionariosLista();
 
-            for (int idx = 0; idx < funcionarios.Count; idx++)
+            for (int indice = 0; indice < funcionarios.Count; indice++)
             {
-                gerenciadorBonificacao.Registrar(funcionarios[idx]);
+                gerenciadorBonificacao.Registrar(funcionarios[indice]);
             }
 
             Console.WriteLine(gerenciadorBonificacao.ValorTotal);
