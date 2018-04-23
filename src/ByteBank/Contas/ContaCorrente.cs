@@ -6,11 +6,15 @@ namespace ByteBank.Contas
 {
     public class ContaCorrente : Conta
     {
-        public double Saldo { get; set; }
-
         public ContaCorrente(int numero, int numeroAgencia)
             : base(numero, numeroAgencia)
         {
+        }
+
+        public override bool Sacar(double valor)
+        {
+            double valorComTaxa = valor + 0.25;
+            return base.Sacar(valorComTaxa);
         }
     }
 }
